@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.landing-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    background-color: #FFBB1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: black;
+    font-size: 24px;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-left: 20rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    /* Adjusted spacing between buttons */
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+    border: 1px solid transparent;
+    /* Decreased border size */
+    padding: 6px 16px;
+    /* Adjusted padding */
+    border-radius: 5px;
+}
+
+nav a.login-button {
+    border-color: black;
+}
+
+nav a:hover {
+    color: #333;
+    border-color: black;
+    transform: scale(1.05);
+}
+
+.custom-text-container {
+    width: 660px;
+    height: 170px;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+}
+
+.custom-text {
+    font-family: "Crima", sans-serif;
+    font-size: 68px;
+}
+
+.additional-text {
+    font-family: "General Sans Regular", sans-serif;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 18px;
+    /* Adjust line spacing */
+}
+
+
+/* Your existing CSS styles */
+
+.book-now-button-container {
+    margin-top: 30px;
+    text-align: center;
+    width: 616px;
+    /* Match the width of the text container */
+    position: absolute;
+    left: 150px;
+    top: 380px;
+    /* Adjust the value to move it up */
+}
+
+.book-now-button {
+    background-color: #FFEC21;
+    color: black;
+    border: 1px solid black;
+    /* Add a 1px black border */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 616px;
+    /* Set width to 616px */
+    height: 44px;
+    /* Keep the same height as before */
+    transition: background-color 0.3s ease, transform 0.2s ease, border-color 0.3s ease;
+    /* Added border-color transition */
+}
+
+.book-now-button:hover {
+    background-color: #333;
+    /* Change background color on hover */
+    color: white;
+    transform: scale(1.02);
+    border-color: #333;
+    /* Change border color on hover */
+}
+
+
+
+.slideshow-container {
+    position: absolute;
+    top: 154px;
+    right: 150px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    /* Add transition for smooth fade */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: #ffffff;
+    border-radius: 8px;
+}
+
+/* Additional styles for the active slide */
+.active-slide {
+    display: block;
+    opacity: 1;
+}
+
+
+.bottom-image {
+    position: absolute;
+    /* Example: Move up by 50px from the bottom */
+    top: 390px;
+    right: 130px;
+    /* Example: Move in from the right by 50px */
+    width: 150px;
+    height: 150px;
+}
+
+.rotating-element {
+    position: absolute;
+    bottom: 0;
+    top: 445px;
+    right: 187px;
+    width: 36px;
+    height: 41px;
+    animation: rotate 20s linear infinite;
+    /* Adjust rotation duration as needed */
+}
+
+.rotating-image {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.marquee-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1550px;
+    overflow: hidden;
+    background-color: black;
+    /* Optional background color */
+}
+
+.marquee-text {
+    color: #FFBB1E;
+    /* Same color as the header */
+    font-family: "Crima", sans-serif;
+    font-size: 18px;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+    /* Adjust duration as needed */
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+
+.center-text {
+    position: absolute;
+    bottom: 150px;
+    /* Adjust the value to move it above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+    /* Same color as the header */
+}
+
+
+.register-button {
+    background-color: #22EC8B;
+    color: #000000;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "General Sans", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.download-app-text {
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 570px;
+    margin-right: 450px;
+    margin-left: 150px;
+    /* Add spacing between the button and text */
+    position: relative;
+    bottom: 105px;
+}
+
+.playstore {
+    height: 30px;
+    width: 30px;
+    margin-top: 570px;
+    margin-right: 450px;
+    margin-left: 150px;
+
+}
+
+.appstore {
+    height: 30px;
+    width: 30px;
+}
+
+.container {
+    width: 100%;
+    color: #000000;
+    display: flex;
+    margin-left: 250px;
+    margin-top: -430px;
+}
+
+.container h1 {
+    font-size: 68px;
+    font-weight: 600;
+    font-family: "Crima", sans-serif;
+}
+
+#move
+{
+    position: relative;
+    left: 120px;
+    bottom: 650px;
+}
