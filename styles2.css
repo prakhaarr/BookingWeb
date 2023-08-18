@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
+    background-color: #FFBB1E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    box-sizing: border-box;
+}
+
+.logo {
+    color: black;
+    font-size: 24px;
+}
+
+.header-text {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    margin-left: 20rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+    border: 1px solid transparent;
+    padding: 6px 16px;
+    border-radius: 5px;
+}
+
+nav a.login-button {
+    border-color: black;
+}
+
+nav a:hover {
+    color: #333;
+    border-color: black;
+    transform: scale(1.05);
+}
+
+/* Rest of your existing CSS styles */
+
+.header-text-container {
+    position: absolute;
+    top: 130px;
+    left: 150px;
+    width: calc(100% - 300px);
+    box-sizing: border-box;
+}
+
+/* Rest of your existing CSS styles */
+
+.book-now-button-container {
+    margin-top: 30px;
+    text-align: center;
+    position: absolute;
+    left: 150px;
+    top: 490px;
+    width: calc(100% - 300px);
+}
+
+/* Rest of your existing CSS styles */
+
+.slideshow-container {
+    position: absolute;
+    top: 250px;
+    right: 150px;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+}
+
+/* Rest of your existing CSS styles */
+
+.bottom-image {
+    position: absolute;
+    top: 550px;
+    right: 130px;
+    width: 150px;
+    height: 150px;
+}
+
+.rotating-element {
+    position: absolute;
+    bottom: 20px;
+    right: 187px;
+    width: 36px;
+    height: 41px;
+    animation: rotate 20s linear infinite;
+}
+
+/* Rest of your existing CSS styles */
+
+.marquee-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+/* Rest of your existing CSS styles */
+
+.center-text {
+    position: fixed;
+    bottom: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Rest of your existing CSS styles */
+
+.download-app-text {
+    font-family: "General Sans", sans-serif;
+    font-size: 18px;
+    color: black;
+    margin-top: 20px;
+    margin-right: 450px;
+}
+
+/* Rest of your existing CSS styles */
+
+/* Add any additional CSS styles here */
