@@ -76,7 +76,10 @@ nav a:hover {
 }
 
 .custom-text {
-    font-family: "Crima", sans-serif;
+    font-family: Georgia,
+        'Times New Roman',
+        Times,
+        serif;
     font-size: 68px;
 }
 
@@ -105,7 +108,10 @@ nav a:hover {
 .book-now-button {
     background-color: #FFEC21;
     color: black;
-    border: 1px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    /* Adjust the shadow properties */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Adding a transition effect */
     /* Add a 1px black border */
     padding: 10px 20px;
     border-radius: 5px;
@@ -121,11 +127,15 @@ nav a:hover {
 }
 
 .book-now-button:hover {
-    background-color: #333;
+    /* background-color: #333;
     /* Change background color on hover */
-    color: white;
+    /* color: white; */
     transform: scale(1.02);
     border-color: #333;
+    transform: translate(2px, 2px);
+    /* Adjust the position on hover */
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
+    /* Adjust the shadow on hover */
     /* Change border color on hover */
 }
 
@@ -214,7 +224,10 @@ img {
 .marquee-text {
     color: #FFBB1E;
     /* Same color as the header */
-    font-family: "Crima", sans-serif;
+    font-family: Georgia,
+        'Times New Roman',
+        Times,
+        serif;
     font-size: 18px;
     white-space: nowrap;
     animation: marquee 30s linear infinite;
@@ -234,7 +247,7 @@ img {
 
 .center-text {
     position: absolute;
-    bottom: 150px;
+    bottom: 270px;
     /* Adjust the value to move it above the bottom */
     left: 50%;
     transform: translateX(-50%);
@@ -249,7 +262,11 @@ img {
 .register-button {
     background-color: #22EC8B;
     color: #000000;
-    border: 1px solid black;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 1);
+    /* Adjust the shadow properties */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Adding a transition effect */
+    /* Add a 1px black border */
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
@@ -260,9 +277,12 @@ img {
 }
 
 .register-button:hover {
-    background-color: #000000;
-    color: #ffffff;
+    /* background-color: #000000;
+    color: #ffffff; */
     transform: scale(1.05);
+    transform: translate(2px, 2px);
+    /* Adjust the position on hover */
+    box-shadow: 7px 7px 0px 0px rgba(0, 0, 0, 1);
 }
 
 .download-app-text {
@@ -296,13 +316,13 @@ img {
     color: #000000;
     display: flex;
     margin-left: 250px;
-    margin-top: -675px;
+    margin-top: -870px;
 }
 
 .container h1 {
     font-size: 68px;
     font-weight: 600;
-    font-family: "Crima", sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #move {
@@ -314,29 +334,28 @@ img {
 /* THIS IS BOOK NOW PAGE  */
 
 
-footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.footer {
     color: black;
-    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 
-.footer-left,
-.footer-right {
+.section {
     flex: 1;
+    padding: 10px;
 }
 
-.footer-title {
-    font-weight: bold;
+.about-us {
+    text-align: left;
+    padding: 10px;
 }
 
-.footer-description {
-    margin-top: 5px;
-}
-
-.footer-right {
+.contact-us {
     text-align: right;
+    padding: 10px;
 }
 
 .foot-panel3 {
@@ -350,4 +369,16 @@ footer {
     /* Adjusted to center vertically */
     text-align: center;
     margin-top: 5px;
+}
+
+.left {
+    margin-right: 180px;
+}
+
+.right {
+    margin-left: 180px;
+}
+
+#contact-div {
+    margin-left: 600px;
 }
