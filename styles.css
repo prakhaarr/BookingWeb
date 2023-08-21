@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
 }
 
+
 .landing-header {
     position: fixed;
     top: 0;
@@ -246,8 +247,10 @@ img {
 
 
 .center-text {
+
+    bottom: 290px;
+    width: 200px;
     position: absolute;
-    bottom: 270px;
     /* Adjust the value to move it above the bottom */
     left: 50%;
     transform: translateX(-50%);
@@ -311,13 +314,16 @@ img {
     width: 30px;
 }
 
+
 .container {
+    position: relative;
     width: 100%;
     color: #000000;
     display: flex;
     margin-left: 250px;
-    margin-top: -870px;
+    margin-top: -860px;
 }
+
 
 .container h1 {
     font-size: 68px;
@@ -381,4 +387,59 @@ img {
 
 #contact-div {
     margin-left: 600px;
+}
+
+
+@media (max-width: 768px) {
+    .landing-header {
+        padding: 0 20px;
+    }
+
+    .header-text {
+        margin-left: 0;
+    }
+
+    .book-now-button-container,
+    .center-text {
+        position: static;
+        text-align: center;
+    }
+
+    .download-app-text {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .custom-text-container {
+        position: static;
+        text-align: center;
+        width: auto;
+        margin: 20px 0;
+        left: 0;
+    }
+
+    .custom-text {
+        font-size: 48px;
+    }
+
+    .bottom-image,
+    .rotating-element {
+        position: static;
+        margin: 20px auto;
+        right: 0;
+        top: 0;
+    }
+
+    .marquee-container {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        text-align: center;
+    }
 }
